@@ -36,10 +36,16 @@ export default function DentalWebsite() {
         <div className="container flex h-16 md:h-20 items-center justify-between px-4 md:px-6">
           <div className="flex items-center space-x-2 md:space-x-3 animate-fade-in">
             <div className="flex h-8 w-8 md:h-12 md:w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-blue-500 shadow-lg">
-              <Smile className="h-4 w-4 md:h-7 md:w-7 text-white" />
+              <Image
+                        src="/ashwindentalico.png"
+                        alt="icon"
+                        width={70}
+                        height={70}
+                        className="h-10 w-8 md:h-10 md:w-10 text-white" 
+                      />
             </div>
             <div>
-              <h1 className="text-sm md:text-xl font-bold text-blue-600">Bright Smile Dental</h1>
+              <h1 className="text-sm md:text-xl font-bold text-blue-600">Ashwin Dental Care</h1>
               <p className="text-xs text-gray-600 hidden md:block">Your Trusted Dental Care</p>
             </div>
           </div>
@@ -80,7 +86,7 @@ export default function DentalWebsite() {
           <div className="flex items-center space-x-2 md:space-x-4">
             <div className="hidden xl:flex items-center space-x-2 text-sm">
               <Phone className="h-4 w-4 text-blue-600" />
-              <span className="font-medium">(555) 123-SMILE</span>
+              <span className="font-medium">+91 96297-97989</span>
             </div>
             <Button
               className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg text-xs md:text-sm px-3 md:px-4 py-2"
@@ -468,15 +474,16 @@ export default function DentalWebsite() {
             <div className="grid gap-12 lg:grid-cols-2 items-center">
               <div className="animate-fade-in-left">
                 <h2
-                  className="text-3xl font-bold tracking-tight sm:text-4xl text-blue-600 mb-6 cursor-pointer hover:scale-105 transition-all duration-300"
-                  onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}
+               className="text-3xl font-bold tracking-tight sm:text-4xl text-blue-600 mb-6 cursor-pointer hover:scale-105 transition-all duration-300"
+               onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}
                 >
-                  Meet Dr. Sarah Johnson
-                </h2>
+              Meet Dr. Ashwin Dhakshin{" "}
+              <span className="text-[0.70em]">BDS.,FCE(Malaysia).,AFLD</span>
+              </h2>
+
                 <p className="text-lg text-gray-600 mb-6">
-                  With over 15 years of experience in dentistry, Dr. Johnson is committed to providing exceptional
-                  dental care in a comfortable, welcoming environment. She graduated from Harvard School of Dental
-                  Medicine and continues to stay current with the latest advances in dental technology and techniques.
+                  With over 6 years of experience in dentistry, Dr. Ashwin is committed to providing exceptional
+                  dental care in a comfortable, welcoming environment. He graduated from Ramakrishna Dental College and Hospital continues to stay current with the latest advances in dental technology and techniques.
                 </p>
                 <div className="grid gap-4 sm:grid-cols-2 mb-8">
                   <div className="flex items-center space-x-3 p-4 bg-white/70 backdrop-blur-sm rounded-lg border border-white/30 hover:shadow-lg transition-all duration-300">
@@ -484,7 +491,7 @@ export default function DentalWebsite() {
                       <Award className="h-6 w-6 text-blue-600" />
                     </div>
                     <div>
-                      <p className="font-semibold text-blue-600">15+ Years</p>
+                      <p className="font-semibold text-blue-600">6+ Years</p>
                       <p className="text-sm text-gray-600">Experience</p>
                     </div>
                   </div>
@@ -493,16 +500,16 @@ export default function DentalWebsite() {
                       <Users className="h-6 w-6 text-green-600" />
                     </div>
                     <div>
-                      <p className="font-semibold text-blue-600">5000+</p>
+                      <p className="font-semibold text-blue-600">500+</p>
                       <p className="text-sm text-gray-600">Happy Patients</p>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-3">
                   {[
-                    "Harvard School of Dental Medicine Graduate",
-                    "Member of American Dental Association",
-                    "Certified in Advanced Cosmetic Dentistry",
+                    "Rool Canal Specialist",
+                    "Certified Invisalign Specialist",
+                    "Laser Dentistry",
                   ].map((item, index) => (
                     <div
                       key={index}
@@ -518,8 +525,8 @@ export default function DentalWebsite() {
               <div className="relative animate-fade-in-right">
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
-                    alt="Dr. Sarah Johnson"
+                    src="/DRASHWIN.jpg?height=500&width=400"
+                    alt="Dr. Ashwin Dhakshin"
                     width={400}
                     height={500}
                     className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
@@ -531,24 +538,6 @@ export default function DentalWebsite() {
                       <p className="text-xs text-gray-600">Patient Rating</p>
                     </div>
                   </div>
-                </div>
-
-                {/* Additional doctor/staff photos */}
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <Image
-                    src="/placeholder.svg?height=150&width=200"
-                    alt="Dental team"
-                    width={200}
-                    height={150}
-                    className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
-                  />
-                  <Image
-                    src="/placeholder.svg?height=150&width=200"
-                    alt="Office consultation"
-                    width={200}
-                    height={150}
-                    className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
-                  />
                 </div>
               </div>
             </div>
@@ -788,10 +777,16 @@ export default function DentalWebsite() {
             <div className="animate-fade-in-up">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-blue-500">
-                  <Smile className="h-6 w-6 text-white" />
+                  <Image
+                        src="/ashwindentalico.png"
+                        alt="icon"
+                        width={70}
+                        height={70}
+                        className="h-8 w-8 md:h-7 md:w-7 text-white" 
+                      />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold">Bright Smile Dental</h3>
+                  <h3 className="text-lg font-bold">Ashwin Dental Care</h3>
                 </div>
               </div>
               <p className="text-gray-400 mb-4">
@@ -816,12 +811,12 @@ export default function DentalWebsite() {
                 links: ["General Dentistry", "Cosmetic Dentistry", "Orthodontics", "Emergency Care"],
               },
               {
-                title: "Quick Links",
-                links: ["About Us", "Patient Forms", "Insurance", "Payment Options"],
+                title: "Location",
+                links: ["Located in : Krisan Business Centre", "Ashwin dental care, ", "4th floor, mayflower valencia, ", "Avinashi Rd, Coimbatore,","Tamil Nadu 641006"],
               },
               {
                 title: "Contact Info",
-                links: ["(555) 123-SMILE", "info@brightsmile.com", "123 Dental Way, Suite 100", "Smile City, SC 12345"],
+                links: ["Phone : +91 96297 97989", ],
               },
             ].map((section, index) => (
               <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${(index + 1) * 200}ms` }}>
@@ -829,9 +824,9 @@ export default function DentalWebsite() {
                 <ul className="space-y-2 text-gray-400">
                   {section.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-                      <Link href="#" className="hover:text-blue-600 transition-colors duration-300">
+                      <p className="hover:text-blue-600 transition-colors duration-300">
                         {link}
-                      </Link>
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -841,7 +836,7 @@ export default function DentalWebsite() {
 
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Bright Smile Dental. All rights reserved.
+              © {new Date().getFullYear()} Ashwin Dental Care. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               {["Privacy Policy", "Terms of Service", "HIPAA Notice"].map((link, index) => (
