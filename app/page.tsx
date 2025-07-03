@@ -90,7 +90,7 @@ export default function DentalWebsite() {
             </div>
             <Button
               className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg text-xs md:text-sm px-3 md:px-4 py-2"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("firstName")?.scrollIntoView({ behavior: "smooth" })}
             >
               Book Now
             </Button>
@@ -121,7 +121,7 @@ export default function DentalWebsite() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   Your Perfect
-                  <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-green-600 to-blue-500 bg-clip-text text-transparent">
                     {" "}
                     Smile
                   </span>{" "}
@@ -189,7 +189,7 @@ export default function DentalWebsite() {
                       </div>
                       <div>
                         <p className="font-semibold text-sm text-blue-600">4.9/5 Rating</p>
-                        <p className="text-xs text-gray-600">500+ Happy Patients</p>
+                        <p className="text-xs text-gray-600">850+ Happy Patients</p>
                       </div>
                     </div>
                   </div>
@@ -470,7 +470,7 @@ export default function DentalWebsite() {
             <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-600/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
           </div>
 
-          <div className="container px-4 md:px-6 relative">
+          <div className="container px-14 md:px-16 relative">
             <div className="grid gap-12 lg:grid-cols-2 items-center">
               <div className="animate-fade-in-left">
                 <h2
@@ -500,7 +500,7 @@ export default function DentalWebsite() {
                       <Users className="h-6 w-6 text-green-600" />
                     </div>
                     <div>
-                      <p className="font-semibold text-blue-600">500+</p>
+                      <p className="font-semibold text-blue-600">850+</p>
                       <p className="text-sm text-gray-600">Happy Patients</p>
                     </div>
                   </div>
@@ -522,7 +522,7 @@ export default function DentalWebsite() {
                   ))}
                 </div>
               </div>
-              <div className="relative animate-fade-in-right">
+              <div className="relative ml-[80px] animate-fade-in-right">
                 <div className="relative">
                   <Image
                     src="/DRASHWIN.jpg?height=500&width=400"
