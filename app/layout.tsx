@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Ashwin Dental Cae',
+  title: 'Ashwin Dental Care',
   description: 'Created by Vilambara(AD Agency)',
   generator: 'nestx.space',
   icons: {
